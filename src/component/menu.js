@@ -1,6 +1,8 @@
 function Menu(){
     return (
-        <h1>This is a Menu page</h1>
+        <div className="abt">
+        <h1>This is for Menu Page</h1>
+       </div>
     );
 }
 

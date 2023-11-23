@@ -1,4 +1,5 @@
-body{
+.bdy{
+  min-height:100vh;
   margin: 0;
   padding-top: 100px;
   box-sizing: border-box;
@@ -6,8 +7,8 @@ body{
   flex-direction: column;
 }
 
+
 nav{
-background-color: lightcoral;
 height: 100px;
 display: flex;
 justify-content: space-between;
@@ -16,6 +17,7 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
+background-color: white;
 }
 nav ul{
   display: flex;
@@ -24,31 +26,234 @@ nav ul{
   list-style: none;
 }
 
+nav ul a{
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+}
+
+nav ul a:hover{
+  background-color: #f4ce14;
+  transform: scale(1.1) ;
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+header{
+  background-color: #495E57 ;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+header h1{
+  margin-bottom: 0;
+  font-size: 4rem;
+  color: #bea215;
+}
+
+header h3{
+  margin: 0;
+  font-size: 2.5rem;
+  color: #EDEFEE;
+}
+
+header p{
+font-size: 1.5rem;
+margin-bottom: 0;
+color: #EDEFEE;
+}
+
+header button:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.title_img{
+  height: 500px;
+  width: 20%;
+  min-width: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.title_img img{
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+header button{
+  padding: 12px 40px;
+  border-radius: 10px;
+  background-color: #f4ce14;
+  font-size: 1.5rem;
+}
+
+main .title2{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px;
+  align-items: center;
+
+}
+
+main h1{
+  font-size: 3rem;
+}
+
+main button{
+  height: 4rem;
+  border-radius: 10px;
+  background-color: #f4ce14;
+  font-size:1.5rem;
+  margin-right: 5vw;
+}
+
+main .content{
+display: flex;
+justify-content: space-around;
+height: 60vh;
+margin-bottom: 150px;
+}
+
+main .content .content_1 {
+  background-color: #EDEFEE;
+  height: 100%;
+  width: 250px;
+overflow: hidden;
+border-radius: 20px;
+
+}
+main .content .content_1 img{
+width: 100%;
+height: auto;
+margin-bottom: 20px;
+}
+
+main .content .content_text_1 h3{
+  margin: 0 15px;
+}
+main .content .content_text_1 p{
+  margin-bottom: 125px;
+}
+main .content .content_text_1 h4{
+ margin: 0 50px;
+}
+
+main .content .content_2 {
+  background-color: #EDEFEE;
+  height: 100%;
+  width: 250px;
+overflow: hidden;
+border-radius: 20px;
+
+}
+main .content .content_2 img{
+width: 100%;
+height: auto;
+margin-bottom: 20px;
+}
+
+main .content .content_text_2 h3{
+  margin: 0 15px;
+}
+main .content .content_text_2 p{
+  margin-bottom: 150px;
+}
+main .content .content_text_2 h4{
+ margin: 0 50px;
+}
+
+main .content .content_3 {
+  background-color: #EDEFEE;
+  height: 100%;
+  width: 250px;
+overflow: hidden;
+border-radius: 20px;
+}
+main .content .content_3 img{
+width: 100%;
+height: auto;
+margin-bottom: 20px;
+}
+
+main .content .content_text_3 h3{
+  margin: 0 15px;
+}
+main .content .content_text_3 p{
+  margin-bottom: 120px;
+}
+main .content .content_text_3 h4{
+ margin: 0 50px;
+}
+
+.abt{
+  width: 100%;
+}
+.abt h1{
+  font-size: 5rem;
+  align-items: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+
 footer{
-  background-color: lightcyan;
+  color: #EDEFEE;
+  background-color: #495E57;
   height: 100px;
-  bottom: 0;
   width: 100%;
   margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 form{
-  max-width: 500px;
-  border: 2px solid blue;
+  background-color: #495E57;
+  width: 40vw;
+  height: 60vh;
+  min-width: 300px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
   margin:2rem auto; 
   padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 label{
+  color: #EDEFEE;
   display: block;
+  font-size: 1.75rem;
 }
 
 input, select{
   display: block;
   margin-bottom: 30px;
+  font-size: 2rem;
 }
 
+form button{
+  font-size: 1.35rem;
+  background-color:#f4ce14;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+form button:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.cfm{
+  color: #EDEFEE;
+  width: 50vw;
+  background-color:#495E57;
+  text-align: center;
+  margin: auto auto;
+}
 

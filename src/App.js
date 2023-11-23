@@ -22,7 +22,7 @@ switch(action.type){
 }
 
 export const initializeTimes = () =>{
-  return ["10:00 Am", "12:00 Am", "2:00 Pm"];
+  return [ "10:00 Am", "12:00 Am", "2:00 Pm"];
 }
 
 export const updateTimes = (dispatch, selectedDate) => {

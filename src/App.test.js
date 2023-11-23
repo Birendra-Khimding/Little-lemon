@@ -2,8 +2,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 import Reservation from './component/reservation';
 import {initializeTimes ,updateTimes } from './App';
-
-
+import { MemoryRouter } from 'react-router-dom';
 
 describe('initializeTimes', () => {
   it('should return an array of available times', () => {
@@ -25,4 +24,16 @@ describe('updateTimes', () => {
       payload: { selectedDate }
     });
   });
+});
+
+test('HTML5 validation attributes are applied to the date input', () => {
+  render(
+    <MemoryRouter>
+      <Reservation availableTimes={["10:00 AM", "12:00 PM", "2:00 PM"]} />
+    </MemoryRouter>
+  );
+  const dateInputLabel = screen.getByText(/choose date/i);
+  const dateInput = screen.getByLabelText('Choose date');
+  expect(dateInput).toHaveAttribute('type', 'date');
+  expect(dateInput).toHaveAttribute('required');
 });
